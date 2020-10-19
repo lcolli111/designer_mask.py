@@ -17,7 +17,7 @@ print(factorial(num))
 
 #Simple calculator for factorials
 
-#num = 3
+#num = 2
 #print("Factorial of", num, "is", factorial(num))
 
 
