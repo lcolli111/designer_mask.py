@@ -15,7 +15,7 @@ print("You chose",num)
 print("Factorial of", num, "is", factorial(num)) 
 print(factorial(num))
 
-#Simple calculator for factorials (n1 * n2.......)
+#Simple calculator for factorials
 
 #num = 3
 #print("Factorial of", num, "is", factorial(num))
