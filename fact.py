@@ -4,9 +4,49 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-num=int(input("Input a number to compute the factiorial : "))
-print("The factorial is: ".format(num))
+num=int(input("Input the first number to compute the factiorial : "))
+print("The first factorial is: ".format(num))
 print(factorial(num))
+num=int(input("Input the second number to compute the factorial : "))
+print("The second factorial is: ".format(num))
+print(factorial(num))
+num=int(input("Input the third number to compute the factorial : "))
+print("The third factorial is: ".format(num))
+print(factorial(num))
+
+
+ 
+
+    #choice = input("Enter choice(1/2/3/4):")
+
+    #num1 = int(input("Enter first number: "))
+    #num2 = int(input("Enter second number: "))
+
+    #if choice == '1':
+       #print(num1,"+",num2,"=", (num1 + num2))
+
+    #elif choice == '2':
+       #print(num1,"-",num2,"=", (num1 - num2))
+
+    #elif choice == '3':
+       #print(num1,"*",num2,"=", (num1 * num2))
+
+    #elif choice == '4':
+       #print(num1,"/",num2,"=", (num1 / num2))
+    #else:
+       #print("Invalid input")
+    #cont = input("Continue?y/n:")
+    #if cont == "y":
+      #print("Input another number: ")        
+  
+
+
+           
+           
+      
+
+
+
 
 
 
