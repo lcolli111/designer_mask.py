@@ -1,18 +1,58 @@
 def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
+      if n <= 0:
+            return 0
+      elif n == 1:
+            return 1
+      else:
+            fact = 1
+            while(n > 1):
+                  fact *= n
+                  n -= 1
+            return fact
+def getNumberFromUser():
+      num = int(input("Please input whole a number under eleven: "))
+      if (num <= 10):
+            return num
+      else:
+            print ("Sorry wrong number!")
+            return -1
+#print("You chose",num)
+while True:
+      result = -1
+      while (result < 0):
+            result = getNumberFromUser()
+      fact = factorial(result)
+      print("Factorial of ", result, "is", fact)
+      cont = input("Another one? yes/no > ")
+while cont.lower() not in ("yes","no"):
+        cont = input("Another one? yes/no")
+        if cont != "yes":
+            break
+        else:
+              cont
 
-num=int(input("Input the first number to compute the factorial : "))
-print("The first factorial is: ".format(num))
-print(factorial(num))
-num=int(input("Input the second number to compute the factorial : "))
-print("The second factorial is: ".format(num))
-print(factorial(num))
-num=int(input("Input the third number to compute the factorial : "))
-print("The third factorial is: ".format(num))
-print(factorial(num))
+
+
+
+
+
+    #if n == 0:
+        #return 1
+    #else:
+        #return n * factorial(n-1)
+
+  
+
+
+#num=int(input("Input the first number to compute the factorial : "))
+#print("The first factorial is: ".format(num))
+#print(factorial(num))
+#num=int(input("Input the second number to compute the factorial : "))
+#print("The second factorial is: ".format(num))
+#print(factorial(num))
+#num=int(input("Input the third number to compute the factorial : "))
+#print("The third factorial is: ".format(num))
+#print(factorial(num))
 
 
  
