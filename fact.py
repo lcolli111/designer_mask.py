@@ -4,7 +4,7 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-num=int(input("Input the first number to compute the factiorial : "))
+num=int(input("Input the first number to compute the factorial : "))
 print("The first factorial is: ".format(num))
 print(factorial(num))
 num=int(input("Input the second number to compute the factorial : "))
