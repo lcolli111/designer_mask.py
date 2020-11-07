@@ -10,26 +10,87 @@ def factorial(n):
                   n -= 1
             return fact
 def getNumberFromUser():
-      num = int(input("Please input whole a number under eleven: "))
+      num = input("Please input whole a number under eleven: ")
       if (num <= 10):
             return num
       else:
             print ("Sorry wrong number!")
             return -1
-#print("You chose",num)
+
+
+            
 while True:
       result = -1
       while (result < 0):
             result = getNumberFromUser()
       fact = factorial(result)
       print("Factorial of ", result, "is", fact)
-      cont = input("Another one? yes/no > ")
-while cont.lower() not in ("yes","no"):
-        cont = input("Another one? yes/no")
-        if cont != "yes":
-            break
-        else:
-              cont
+def ask_again():
+      ans = input("Do you want to put another number in? ")
+      
+
+while True:
+      result = -1
+      while (result < 0):
+            result = getNumberFromUser()
+      fact *= n
+      fact = factorial(result)
+      
+      print("Factorial of ", result, "is", fact)
+
+getNumberFromUser()
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+       
+            
+
+            #input("Enter yes/no to continue")
+            
+
+                  
+      
+            
+      
+
+    
+      
+
+      
+
+       
+
+    
+        
+   
+
+      
+
+
+      
+   
+    
+		    
+	  
+
+      #ans = input("Another one? yes/no")
+#while ans.lower() not in ("yes","no"):
+        #ans = input("Another one? yes/no")
+        #if input != "yes":
+            #break
+        #else:
+              #pass
 
 
 
