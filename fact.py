@@ -18,7 +18,8 @@ def getNumberFromUser():
             return -1
 
 
-            
+
+                
 while True:
       result = -1
       while (result < 0):
@@ -26,7 +27,15 @@ while True:
       fact = factorial(result)
       print("Factorial of ", result, "is", fact)
 def ask_again():
-      ans = input("Do you want to put another number in? ")
+      ans = input("Do you want to put another number in y/n?  ")
+      if (ans == 'y'):
+            return num
+      else:
+            if (ans == 'n'):
+                  print ("Good bye!")
+                  quit
+      
+
       
 
 while True:
