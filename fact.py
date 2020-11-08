@@ -1,4 +1,5 @@
 def factorial(n):
+      
       if n <= 0:
             return 0
       elif n == 1:
@@ -10,14 +11,32 @@ def factorial(n):
                   n -= 1
             return fact
 def getNumberFromUser():
-      num = input("Please input whole a number under eleven: ")
+      num = int(input("Please input whole a number under eleven: "))
       if (num <= 10):
             return num
+      
       else:
             print ("Sorry wrong number!")
             return -1
+getNumberFromUser()
 
+def ask_again():
+      ans = str(input("Do you want to put another number in y/n?  "))
+      
+      if ans == 'y':
+            return num
 
+      else:
+            quit
+ask_again()   
+# ('y', 'n') 
+      
+            
+      #else:
+            #if ans == 'n':
+
+                  #print ("Good bye!")
+                  #quit
 
                 
 while True:
@@ -26,28 +45,22 @@ while True:
             result = getNumberFromUser()
       fact = factorial(result)
       print("Factorial of ", result, "is", fact)
-def ask_again():
-      ans = input("Do you want to put another number in y/n?  ")
-      if (ans == 'y'):
-            return num
-      else:
-            if (ans == 'n'):
-                  print ("Good bye!")
-                  quit
-      
 
       
-
-while True:
-      result = -1
-      while (result < 0):
-            result = getNumberFromUser()
-      fact *= n
-      fact = factorial(result)
       
-      print("Factorial of ", result, "is", fact)
+      #course = input('enter course: ')
+      #teacher = input('enter teacher:' )
+      #mytuple = course, teacher
+      #while True:
+      #result = -1
+      #while (result < 0):
+            #result = getNumberFromUser()
+      #fact *= n
+      #fact = factorial(result)
+      
+      #print("Factorial of ", result, "is", fact)
 
-getNumberFromUser()
+#getNumberFromUser()
 
 
 
