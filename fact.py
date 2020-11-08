@@ -10,7 +10,7 @@ def factorial(n):
                   fact *= n
                   n -= 1
             return fact
-def getNumberFromUser():
+def getNumber():
       num = int(input("Please input whole a number under eleven: "))
       if (num <= 10):
             return num
@@ -18,7 +18,7 @@ def getNumberFromUser():
       else:
             print ("Sorry wrong number!")
             return -1
-getNumberFromUser()
+getNumber()
 
 def ask_again():
       ans = str(input("Do you want to put another number in y/n?  "))
