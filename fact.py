@@ -6,7 +6,7 @@ def factorial(n):
           
           print("Too negative!")
     elif n >= 10:
-          print("Trim the tree!")
+          print("Too loud! Keep it down!")
     else:
         return n * factorial(n-1)
 n=int(input("Input a number under eleven : "))
