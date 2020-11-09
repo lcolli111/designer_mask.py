@@ -8,11 +8,12 @@ def factorial(n):
             elif n <= 0:
           
                   print("Too negative!")
-                  ans = int(input("Try again: "))
+                  ans1 = int(input("Try again: "))
+                  print(ans1)
             elif n >= 10:
                 
                   print("Too loud! Keep it down!")
-                  ans = int(input("Try another number: "))
+                  ans2 = int(input("Try another number: "))
             
                    #Need to include another loop for three tries
             else:
@@ -31,4 +32,8 @@ def num():
       
 
 num()
+
+#def ask_again():
+      #ans = str(input("Do you want to put another number in y/n?  "))
+      
 
