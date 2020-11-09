@@ -10,6 +10,7 @@ def factorial(n):
           ans = int(input("Try again: "))
     elif n >= 10:
           print("Too loud! Keep it down!")
+          ans = int(input("Try another number: ")) #Need to include another loop for three tries
     else:
         return n * factorial(n-1) #Recursive function used to compute the number
         
