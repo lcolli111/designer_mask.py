@@ -2,9 +2,11 @@ def factorial(n):
 
     if n == 0:
         return 1
-    #elif n <= 0:
-          #return -1
-          #print("Sorry, wrong number!")
+    elif n <= 0:
+          
+          print("Too negative!")
+    elif n >= 10:
+          print("Trim the tree!")
     else:
         return n * factorial(n-1)
 n=int(input("Input a number under eleven : "))
@@ -16,10 +18,10 @@ def num():
       if num <= 10:
             return num
       
-      else:
-            if num >= 10:
-                  print ("Sorry wrong number!")
-                  return -1
+      #else:
+            #num > 10:
+                  #return -1
+                  #print("Number is too large, please try again!")
 num()
 
 #def ask_again():
