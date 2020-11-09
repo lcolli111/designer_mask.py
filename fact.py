@@ -1,21 +1,26 @@
 def factorial(n):
+
     if n == 0:
         return 1
+    #elif n <= 0:
+          #return -1
+          #print("Sorry, wrong number!")
     else:
         return n * factorial(n-1)
-n=int(input("Input a number to compute the factiorial : "))
+n=int(input("Input a number under eleven : "))
 print(factorial(n))
 
 
-def getNumber():
-      num = int(input("Please input whole a number under eleven: "))
-      if (num <= 10):
+def num():
+    
+      if num <= 10:
             return num
       
       else:
-            print ("Sorry wrong number!")
-            return -1
-getNumber()
+            if num >= 10:
+                  print ("Sorry wrong number!")
+                  return -1
+num()
 
 #def ask_again():
       #ans = str(input("Do you want to put another number in y/n?  "))
