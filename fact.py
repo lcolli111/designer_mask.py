@@ -3,16 +3,19 @@ def factorial(n):
     if n == 0:
         return 1
         
+        
     elif n <= 0:
           
           print("Too negative!")
+          ans = int(input("Try again: "))
     elif n >= 10:
           print("Too loud! Keep it down!")
     else:
-        return n * factorial(n-1)
+        return n * factorial(n-1) #Recursive function used to compute the number
         
 n=int(input("Input a number under eleven : "))
 print("The factorial of", n, "is:", factorial(n))
+
 
 
 
