@@ -10,25 +10,25 @@ def factorial(n):
                   fact *= n
                   n -= 1
             return fact
-def getNumber():
-      num = int(input("Please input whole a number under eleven: "))
-      if (num <= 10):
-            return num
+#def getNumber():
+      #num = int(input("Please input whole a number under eleven: "))
+      #if (num <= 10):
+            #return num
       
-      else:
-            print ("Sorry wrong number!")
-            return -1
+      #else:
+            #print ("Sorry wrong number!")
+            #return -1
 #getNumber()
 
-def ask_again():
-      ans = str(input("Do you want to put another number in y/n?  "))
+#def ask_again():
+      #ans = str(input("Do you want to put another number in y/n?  "))
       
-      if ans == 'y':
-            return num
+      #if ans == 'y':
+            #return num
 
-      else:
+      #else:
 
-            quit
+            #quit
 #ask_again()   
 # ('y', 'n') 
       
@@ -40,9 +40,9 @@ def ask_again():
                   #quit
 
                 
-while True:
-      result = -1
-      while (result < 0):
-            result = getNumber()
-      fact = factorial(result)
-      print("Factorial of ", result, "is", fact)
+#while True:
+      #result = -1
+      #while (result < 0):
+            #result = getNumber()
+      #fact = factorial(result)
+      #print("Factorial of ", result, "is", fact)
