@@ -14,6 +14,7 @@ def factorial(n):
                 
                   print("Too loud! Keep it down!")
                   ans2 = int(input("Try another number: "))
+                  print(ans2)
             
                    #Need to include another loop for three tries
             else:
