@@ -18,6 +18,7 @@ def again():
             return True
       print("Goodbye!")
       return False
+
 numbers = []
 while True:
       n = int(input("Input a number under eleven : "))
