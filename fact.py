@@ -10,24 +10,19 @@ def input_valid(n):
             print("Too loud! Keep it down!")
             return False
       return True
-#x = 1
 
-#while(x <= 10):
-	#print(x)
-	#x = x+1
 numbers = []
 while True:
       n = int(input("Input a number under eleven : "))
       while not input_valid(n):
             n=int(input("Input a number under eleven : "))
       numbers.append(n)
-      print("The factorial of", n, "is:", factorial(n))
-      #if not again():
-            #break
+      print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
+#Below code is commented for possible future use      
 #print("")
 #print("The first number you entered was " + str(numbers[0]) + ".")
 #print("It's factorial is " + str(factorial(numbers[0])) + ".")
-
+#The below code is still refusing to work!
 def yes_or_no():
       reply = str(input(question + '(y/n): ')).lower.strip()
       if reply[0] == 'y':
@@ -38,9 +33,27 @@ def yes_or_no():
             return yes_or_no("Please enter (y/n) ")
 yes_or_no()
 
-#a = ['yes', 'no']
-#for i in a:
-      #print(i)
+
+
+answer = input("Enter yes or no: ") 
+if answer == "yes": 
+     pass 
+elif answer == "no": 
+     quit
+else: 
+    print("Please enter yes or no.") 
+print(answer)
+
+answer = None 
+while answer not in ("yes", "no"): 
+    answer = input("Enter yes or no: ") 
+    if answer == "yes": 
+          pass
+    elif answer == "no": 
+          quit 
+    else: 
+    	print("Please enter yes or no.") 
+print(answer)
 
     	
 
