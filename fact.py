@@ -2,6 +2,18 @@ def factorial(n):
       if n == 0:
             return 1
       return n * factorial(n-1) #Recursive function used to compute the number
+
+#def ask_again():
+      #ans = ('yes', 'no')
+      #while ans not in ('yes', 'no'):
+            #ask_again = input("Do you want to put another number?  ").lower()
+      #if ans == 'yes':
+            #return True
+            #print('yes')
+      #if ans == 'no':
+            #print("Goodbye!")
+            #return False 
+#ask_again()
 def input_valid(n):
       if n < 0:
             print("Too negative!")
@@ -13,47 +25,43 @@ def input_valid(n):
 
 numbers = []
 while True:
-      n = int(input("Input a number under eleven : "))
+      n = int(input("Input a number under eleven:  "))
       while not input_valid(n):
-            n=int(input("Input a number under eleven : "))
+            n = int(input("Input a number under eleven:  "))
       numbers.append(n)
       print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
+
 #Below code is commented for possible future use      
 #print("")
 #print("The first number you entered was " + str(numbers[0]) + ".")
 #print("It's factorial is " + str(factorial(numbers[0])) + ".")
 #The below code is still refusing to work!
-def yes_or_no():
-      reply = str(input(question + '(y/n): ')).lower.strip()
-      if reply[0] == 'y':
-            return 1
-      elif reply[0] == 'n':
-            return 0
-      else:
-            return yes_or_no("Please enter (y/n) ")
-yes_or_no()
+
+#Question = input("your question")
+#if Question == ("yes")
+	#print ("well done")
+#elif Question == ("no")
+	#print ("try again")        
+#########################################            
+#class SpecialString:
+      #def __init__(self, cont):
+    #self.cont = cont           
+#########################################            
+#def validate_age(age):
+    #if age >=0 :
+        #return True
+    #return False
+#########################################
+#while True:
+    #try:
+        #age = int(raw_input("Please enter your age:"))
+        #if validate_age(age): break
+    #except ValueError:
+        #print "Error: Invalid age."
 
 
 
-answer = input("Enter yes or no: ") 
-if answer == "yes": 
-     pass 
-elif answer == "no": 
-     quit
-else: 
-    print("Please enter yes or no.") 
-print(answer)
 
-answer = None 
-while answer not in ("yes", "no"): 
-    answer = input("Enter yes or no: ") 
-    if answer == "yes": 
-          pass
-    elif answer == "no": 
-          quit 
-    else: 
-    	print("Please enter yes or no.") 
-print(answer)
 
     	
 
