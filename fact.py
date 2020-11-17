@@ -24,12 +24,19 @@ def input_valid(n):
       return True
 
 numbers = []
-while True:
-      n = int(input("Input a number under eleven:  "))
-      while not input_valid(n):
+def ask_user():
+
+      while True:
             n = int(input("Input a number under eleven:  "))
-      numbers.append(n)
-      print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
+            while not input_valid(n):
+                  n = int(input("Input a number under eleven:  "))
+            numbers.append(n)
+            print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
+            user_input = input("Do you want to enter another number y/n ?")
+            if user_input != y:
+                  break
+                  print("Goodbye!")
+ask_user()
 
 #Below code is commented for possible future use      
 #print("")
