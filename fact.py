@@ -33,9 +33,10 @@ def ask_user():
             numbers.append(n)
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
             user_input = input("Do you want to enter another number y/n ?")
-            if user_input != y:
-                  break
+            if user_input != 'y':
                   print("Goodbye!")
+                  break
+                  
 ask_user()
 
 #Below code is commented for possible future use      
