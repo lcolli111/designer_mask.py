@@ -32,7 +32,7 @@ def ask_user():
                   print("Continue: ")
                   #print("The factorial of", n, "is:", factorial(n))
                   continue
-            
+            #user_input = input("Do you want to see a previous number? y/n ")
 ask_user()
 #print(numbers = [user_input - 1])
 
