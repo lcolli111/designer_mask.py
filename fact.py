@@ -20,19 +20,24 @@ def ask_user():
                   n = int(input("Input a number under eleven:  "))
             numbers.append(n)
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
-            user_input = input("Do you want to enter another number: ('y' or n) ?")
-            if user_input != 'y':
+            user_input1 = input("Do you want to enter another number: ('y' or n) ?")
+            if user_input1 != 'y':
                   
                   #user_input = input("Do you want to see a previous number? 'y/n' ")
                   print("Goodbye!")
                   break
-            if user_input != 'n':
+            if user_input1 != 'n':
                   #user_input = input("Do you want to see a previous number? y/n ")
                   numbers.append(n)
                   print("Continue: ")
-                  #print("The factorial of", n, "is:", factorial(n))
                   continue
-            #user_input = input("Do you want to see a previous number? y/n ")
+            user_input2 = input("Do you want to see the previous number entered? y/n ")
+            if user_input2 != 'y':
+                  print("Thank you, come again!")
+                  break
+            if user_input2 != 'n':
+                  print("The last number you entered", n, "was:", numbers())
+                  continue
 ask_user()
 #print(numbers = [user_input - 1])
 
