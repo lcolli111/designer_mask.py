@@ -3,17 +3,6 @@ def factorial(n):
             return 1
       return n * factorial(n-1) #Recursive function used to compute the number
 
-#def ask_again():
-      #ans = ('yes', 'no')
-      #while ans not in ('yes', 'no'):
-            #ask_again = input("Do you want to put another number?  ").lower()
-      #if ans == 'yes':
-            #return True
-            #print('yes')
-      #if ans == 'no':
-            #print("Goodbye!")
-            #return False 
-#ask_again()
 def input_valid(n):
       if n < 0:
             print("Too negative!")
@@ -22,8 +11,7 @@ def input_valid(n):
             print("Too loud! Keep it down!")
             return False
       return True
-
-numbers = []
+numbers = [] 
 def ask_user():
 
       while True:
@@ -32,40 +20,23 @@ def ask_user():
                   n = int(input("Input a number under eleven:  "))
             numbers.append(n)
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
-            user_input = input("Do you want to enter another number y/n ?")
+            user_input = input("Do you want to enter another number: ('y' or n) ?")
             if user_input != 'y':
+                  
+                  #user_input = input("Do you want to see a previous number? 'y/n' ")
                   print("Goodbye!")
                   break
-                  
+            if user_input != 'n':
+                  #user_input = input("Do you want to see a previous number? y/n ")
+                  numbers.append(n)
+                  print("Continue: ")
+                  #print("The factorial of", n, "is:", factorial(n))
+                  continue
+            
 ask_user()
+#print(numbers = [user_input - 1])
 
-#Below code is commented for possible future use      
-#print("")
-#print("The first number you entered was " + str(numbers[0]) + ".")
-#print("It's factorial is " + str(factorial(numbers[0])) + ".")
-#The below code is still refusing to work!
 
-#Question = input("your question")
-#if Question == ("yes")
-	#print ("well done")
-#elif Question == ("no")
-	#print ("try again")        
-#########################################            
-#class SpecialString:
-      #def __init__(self, cont):
-    #self.cont = cont           
-#########################################            
-#def validate_age(age):
-    #if age >=0 :
-        #return True
-    #return False
-#########################################
-#while True:
-    #try:
-        #age = int(raw_input("Please enter your age:"))
-        #if validate_age(age): break
-    #except ValueError:
-        #print "Error: Invalid age."
 
 
 
@@ -117,7 +88,6 @@ ask_user()
 
 
 
-#def ask_again():
-      #ans = str(input("Do you want to put another number in y/n?  "))
+
       
 
