@@ -12,7 +12,7 @@ def input_valid(n):
             return False
       return True
 numbers = [] 
-def ask_user():
+def ask_user1():
 
       while True:
             n = int(input("Input a number under eleven:  "))
@@ -38,9 +38,20 @@ def ask_user():
             if user_input2 != 'n':
                   print("The last number you entered", n, "was:", numbers())
                   continue
-ask_user()
+ask_user1()
 #print(numbers = [user_input - 1])
 
+def ask_user2():
+
+      while True:
+            user_input2 = input("Do you want to see the previous number entered? y/n ")
+            if user_input2 != 'y':
+                  print("Thank you, come again!")
+                  break
+            if user_input2 != 'n':
+                  print("The last number you entered", n, "was:", numbers())
+                  continue
+ask_user2()
 
 
 
