@@ -14,7 +14,7 @@ def input_valid(n):
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] 
 x = len(numbers)
 print("There are", len(numbers), "from which to choose.") #User is informed of how many numbers there are
-def ask_user1():
+def ask_user():
 
       while True:
             n = int(input("Input a number under eleven:  "))
@@ -22,16 +22,16 @@ def ask_user1():
                   n = int(input("Input a number under eleven:  "))
             numbers.append(n)
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
-            user_input1 = input("Do you want to enter another number: (y or n) ?")
-            if user_input1 != 'y':
+            user_input = input("Do you want to enter another number: (y or n) ?")
+            if user_input != 'y':
                   print("Goodbye!")
                   break
-            if user_input1 != 'n':
+            if user_input != 'n':
                   numbers.append(n)
                   print("Continue: ")
                   continue
             
-ask_user1()
+ask_user() 
 
 
 
