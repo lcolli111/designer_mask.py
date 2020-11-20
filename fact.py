@@ -11,8 +11,8 @@ def input_valid(n):
             print("Too loud! Keep it down!") #Returns a value of "False" when number is above 10 and loop continues
             return False
       return True #Returns "True", factorial is computed, and user now can choose to continue or not.
-numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] 
-x = len(numbers)
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] #Array of numbers assigned to a list
+x = len(numbers) #Amount of list items
 print("There are", len(numbers), "from which to choose.") #User is informed of how many numbers there are
 def ask_user():
 
