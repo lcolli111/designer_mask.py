@@ -5,12 +5,12 @@ def factorial(n):
 
 def input_valid(n):
       if n < 0:
-            print("Too negative!")
+            print("Too negative!") #Reminds the user to follow the formula: n>=0 and loop continues
             return False
       elif n > 10:
-            print("Too loud! Keep it down!")
+            print("Too loud! Keep it down!") #Returns a value of "False" when number is above 10 and loop continues
             return False
-      return True
+      return True #Returns "True", factorial is computed, and user now can choose to continue or not.
 numbers = [] 
 def ask_user1():
 
@@ -19,39 +19,25 @@ def ask_user1():
             while not input_valid(n):
                   n = int(input("Input a number under eleven:  "))
             numbers.append(n)
+            #print(len(numbers))
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
-            user_input1 = input("Do you want to enter another number: ('y' or n) ?")
+            user_input1 = input("Do you want to enter another number: (y or n) ?")
             if user_input1 != 'y':
-                  
-                  #user_input = input("Do you want to see a previous number? 'y/n' ")
                   print("Goodbye!")
                   break
             if user_input1 != 'n':
-                  #user_input = input("Do you want to see a previous number? y/n ")
                   numbers.append(n)
                   print("Continue: ")
                   continue
-            user_input2 = input("Do you want to see the previous number entered? y/n ")
+            #user_input2 = input("Do you want to see the previous number entered? y/n ")
             if user_input2 != 'y':
                   print("Thank you, come again!")
                   break
             if user_input2 != 'n':
-                  print("The last number you entered", n, "was:", numbers())
+                  print("The last number you entered", n, "was:", numbers[0])
                   continue
 ask_user1()
-#print(numbers = [user_input - 1])
 
-def ask_user2():
-
-      while True:
-            user_input2 = input("Do you want to see the previous number entered? y/n ")
-            if user_input2 != 'y':
-                  print("Thank you, come again!")
-                  break
-            if user_input2 != 'n':
-                  print("The last number you entered", n, "was:", numbers())
-                  continue
-ask_user2()
 
 
 
