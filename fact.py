@@ -19,7 +19,7 @@ def ask_user():
       while True:
             n = int(input("Input a number under eleven:  "))
             while not input_valid(n):
-                  n = int(input("Input a number under eleven:  "))
+                  n = int(input("Input a number under eleven:  ")) #Number cannot go greater than 10 but relies on an array
             numbers.append(n)
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
             user_input = input("Do you want to enter another number: (y or n) ?")
@@ -48,35 +48,7 @@ ask_user()
 
 
        
-      #elif n > 10:
-            #print("Too loud!")
-            #return False
-      #return True
-                  
-                   
-
-            #def ask_again():
-                  #ans = ''
-                  #while ans not in('y', 'n'):
-                        #ans = input("Would you like to input another number in y/n?").lower()
-                        #if ans == 'y':
-                              #return True
-                        #print("Goodbye!")
-                        #return False 
-            #numbers = []
-            #while True:
-                  #n = int(input("Input a number under eleven: "))
-                  #while not input_valid(n):
-                        #n = int(input("Input a number under eleven: "))
-                        #numbers.append(n)
-
-                        #print("The factorial of", n, "is: ", factorial(n))
-
-                        #if not again():
-                              #break
-                  #print("")
-                  #print("The first number you entered was " + str(numbers[]) + ".")
-                  #print("The factorial is " + str(factorial(numbers[0])) + ".")
+      
 
 
 
