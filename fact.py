@@ -11,15 +11,19 @@ def input_valid(n):
             print("Too loud! Keep it down!") #Returns a value of "False" when number is above 10 and loop continues
             return False
       return True #Returns "True", factorial is computed, and user now can choose to continue or not.
-numbers = [] 
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] #user is informed of how many numbers
+x = len(numbers)
+print("There are", len(numbers), "from which to choose.")
+
 def ask_user1():
 
       while True:
             n = int(input("Input a number under eleven:  "))
             while not input_valid(n):
                   n = int(input("Input a number under eleven:  "))
+                  #x = len(numbers.append(n))
+                  #print(x)
             numbers.append(n)
-            #print(len(numbers))
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
             user_input1 = input("Do you want to enter another number: (y or n) ?")
             if user_input1 != 'y':
@@ -29,13 +33,7 @@ def ask_user1():
                   numbers.append(n)
                   print("Continue: ")
                   continue
-            #user_input2 = input("Do you want to see the previous number entered? y/n ")
-            if user_input2 != 'y':
-                  print("Thank you, come again!")
-                  break
-            if user_input2 != 'n':
-                  print("The last number you entered", n, "was:", numbers[0])
-                  continue
+            
 ask_user1()
 
 
