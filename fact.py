@@ -12,7 +12,7 @@ def input_valid(n):
             return False
       return True #Returns "True", factorial is computed, and user now can choose to continue or not.
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'] #Array of numbers assigned to a list
-x = len(numbers) #Amount of list items
+x = len(numbers) #Amount of list items with array that starts at 0.
 print("There are", len(numbers), "from which to choose.") #User is informed of how many numbers there are
 def ask_user():
 
