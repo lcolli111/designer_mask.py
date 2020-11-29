@@ -22,7 +22,7 @@ count = 0
 if n_terms<=0:
     print("Enter a positive integer: ")
 elif n_terms == 1:
-    print("Fibonacci sequence up to", n_terms, ":")
+    print("Fibonacci sequence up to", n_terms, ":") #User determines the first few terms
     print(n1)
 else:
     print("Fibonacci sequence: ")
