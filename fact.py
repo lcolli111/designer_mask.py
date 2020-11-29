@@ -22,7 +22,7 @@ def ask_user():
                   n = int(input("Input a number under eleven:  ")) #Number cannot go greater than 10 but relies on an array
             numbers.append(n)
             print("The factorial of", n, "is:", factorial(n)) #Prints the resulting factorial
-            user_input = input("Do you want to enter another number: (y or n) ?")#Some systems may require y to be typed as a string in the console: 'y'
+            user_input = input("Do you want to enter another number: (y or n) ?")#Some systems may require y to be typed as a string in the console: 'y'pyth
             if user_input != 'y':
                   print("Goodbye!")
                   break
